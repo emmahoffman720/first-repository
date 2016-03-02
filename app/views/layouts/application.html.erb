@@ -28,17 +28,24 @@
   </header>
   <hr />
   <br class = "clear"/>
+
   <div class = "container">
 
 <%= yield %>
 
-</div>
-
-<div class = "footer">
-  <div class = "container">
-    <p class = "text-muted">Place Sticky Footer Content Here. </p>
   </div>
-</div>
+
+  <div class = "footer">
+    <div class = "container">
+      <div class = "col-xs-6">
+        <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+      </div>
+      <div class = "col-xs-6 footer-blurb">
+        Proudly created to bring a smile to your face by Emma.
+      </div>
+    </div>
+  </div>
+
 
 </body>
 </html>
